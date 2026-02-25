@@ -1,220 +1,112 @@
 {
 	"info": {
 		"_postman_id": "7d9b9b5a-fa6a-4d6a-9a9a-9e9e9e9e9e9e",
-		"name": "Weather API v2",
-		"description": "Updated API collection for testing weather endpoints with all CSV columns",
+		"name": "Weather API",
+		"description": "API collection for testing weather endpoints",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
 		{
-			"name": "Basic Queries",
-			"item": [
-				{
-					"name": "Get All Weather",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": "http://localhost:8097/weather/all"
-					}
-				},
-				{
-					"name": "Get Weather by Date",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "http://localhost:8097/weather/date?date=19961101-11:00",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8097",
-							"path": [
-								"weather",
-								"date"
-							],
-							"query": [
-								{
-									"key": "date",
-									"value": "19961101-11:00"
-								}
-							]
-						}
-					}
-				},
-				{
-					"name": "Get Weather by Range",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "http://localhost:8097/weather/range?start=19961101-00:00&end=19961101-23:59",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8097",
-							"path": [
-								"weather",
-								"range"
-							],
-							"query": [
-								{
-									"key": "start",
-									"value": "19961101-00:00"
-								},
-								{
-									"key": "end",
-									"value": "19961101-23:59"
-								}
-							]
-						}
-					}
-				},
-				{
-					"name": "Get Weather by Condition",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "http://localhost:8097/weather/condition?condition=Smoke",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8097",
-							"path": [
-								"weather",
-								"condition"
-							],
-							"query": [
-								{
-									"key": "condition",
-									"value": "Smoke"
-								}
-							]
-						}
-					}
+			"name": "Get All Weather",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8097/weather/all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8097",
+					"path": [
+						"weather",
+						"all"
+					]
 				}
-			]
+			},
+			"response": []
 		},
 		{
-			"name": "Numeric Filters",
-			"item": [
-				{
-					"name": "Temperature Greater Than",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "http://localhost:8097/weather/temp-greater?value=30.0",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8097",
-							"path": [
-								"weather",
-								"temp-greater"
-							],
-							"query": [
-								{
-									"key": "value",
-									"value": "30.0"
-								}
-							]
+			"name": "Get Weather by Date",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8097/weather/date?date=19961101-11:00",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8097",
+					"path": [
+						"weather",
+						"date"
+					],
+					"query": [
+						{
+							"key": "date",
+							"value": "19961101-11:00"
 						}
-					}
-				},
-				{
-					"name": "Wind Speed Greater Than",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "http://localhost:8097/weather/wind-greater?value=10.0",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8097",
-							"path": [
-								"weather",
-								"wind-greater"
-							],
-							"query": [
-								{
-									"key": "value",
-									"value": "10.0"
-								}
-							]
-						}
-					}
-				},
-				{
-					"name": "Visibility Less Than",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "http://localhost:8097/weather/vis-less?value=2.0",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8097",
-							"path": [
-								"weather",
-								"vis-less"
-							],
-							"query": [
-								{
-									"key": "value",
-									"value": "2.0"
-								}
-							]
-						}
-					}
-				},
-				{
-					"name": "Humidity Greater Than",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "http://localhost:8097/weather/humidity-greater?value=80.0",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8097",
-							"path": [
-								"weather",
-								"humidity-greater"
-							],
-							"query": [
-								{
-									"key": "value",
-									"value": "80.0"
-								}
-							]
-						}
-					}
+					]
 				}
-			]
+			},
+			"response": []
 		},
 		{
-			"name": "Sorting",
-			"item": [
-				{
-					"name": "Sorted by Temperature (DESC)",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": "http://localhost:8097/weather/sorted"
-					}
+			"name": "Get Weather by Range",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8097/weather/range?start=19961101-00:00&end=19961101-23:59",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8097",
+					"path": [
+						"weather",
+						"range"
+					],
+					"query": [
+						{
+							"key": "start",
+							"value": "19961101-00:00"
+						},
+						{
+							"key": "end",
+							"value": "19961101-23:59"
+						}
+					]
 				}
-			]
+			},
+			"response": []
+		},
+		{
+			"name": "Get Weather by Condition",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8097/weather/condition?condition=Smoke",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8097",
+					"path": [
+						"weather",
+						"condition"
+					],
+					"query": [
+						{
+							"key": "condition",
+							"value": "Smoke"
+						}
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }
