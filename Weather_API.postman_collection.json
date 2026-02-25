@@ -1,0 +1,112 @@
+{
+	"info": {
+		"_postman_id": "7d9b9b5a-fa6a-4d6a-9a9a-9e9e9e9e9e9e",
+		"name": "Weather API",
+		"description": "API collection for testing weather endpoints",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get All Weather",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8097/weather/all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8097",
+					"path": [
+						"weather",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Weather by Date",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8097/weather/date?date=1996-11-01",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8097",
+					"path": [
+						"weather",
+						"date"
+					],
+					"query": [
+						{
+							"key": "date",
+							"value": "1996-11-01"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Weather by Range",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8097/weather/range?start=1996-11-01&end=1996-11-30",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8097",
+					"path": [
+						"weather",
+						"range"
+					],
+					"query": [
+						{
+							"key": "start",
+							"value": "1996-11-01"
+						},
+						{
+							"key": "end",
+							"value": "1996-11-30"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Weather by Condition",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8097/weather/condition?condition=Haze",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8097",
+					"path": [
+						"weather",
+						"condition"
+					],
+					"query": [
+						{
+							"key": "condition",
+							"value": "Haze"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
