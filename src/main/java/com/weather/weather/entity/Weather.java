@@ -3,7 +3,7 @@ package com.weather.weather.entity;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 @Document(collection = "weather")
 public class Weather {
@@ -11,27 +11,192 @@ public class Weather {
     @Id
     private String id;
 
-    private LocalDate date;
-    private Double temperature;
-    private Double humidity;
-    private Double pressure;
-    private String condition;
+    private LocalDateTime datetimeUtc;
+    private String conds;
+    private Double dewptm;
+    private Integer fog;
+    private Integer hail;
+    private Double heatindexm;
+    private Double hum;
+    private Double precipm;
+    private Double pressurem;
+    private Integer rain;
+    private Integer snow;
+    private Double tempm;
+    private Integer thunder;
+    private Integer tornado;
+    private Double vism;
+    private Integer wdird;
+    private String wdire;
+    private Double wgustm;
+    private Double windchillm;
+    private Double wspdm;
 
-    public String getId() { return id; }
-    public void setId(String id) { this.id = id; }
+    public String getId() {
+        return id;
+    }
 
-    public LocalDate getDate() { return date; }
-    public void setDate(LocalDate date) { this.date = date; }
+    public void setId(String id) {
+        this.id = id;
+    }
 
-    public Double getTemperature() { return temperature; }
-    public void setTemperature(Double temperature) { this.temperature = temperature; }
+    public LocalDateTime getDatetimeUtc() {
+        return datetimeUtc;
+    }
 
-    public Double getHumidity() { return humidity; }
-    public void setHumidity(Double humidity) { this.humidity = humidity; }
+    public void setDatetimeUtc(LocalDateTime datetimeUtc) {
+        this.datetimeUtc = datetimeUtc;
+    }
 
-    public Double getPressure() { return pressure; }
-    public void setPressure(Double pressure) { this.pressure = pressure; }
+    public String getConds() {
+        return conds;
+    }
 
-    public String getCondition() { return condition; }
-    public void setCondition(String condition) { this.condition = condition; }
+    public void setConds(String conds) {
+        this.conds = conds;
+    }
+
+    public Double getDewptm() {
+        return dewptm;
+    }
+
+    public void setDewptm(Double dewptm) {
+        this.dewptm = dewptm;
+    }
+
+    public Integer getFog() {
+        return fog;
+    }
+
+    public void setFog(Integer fog) {
+        this.fog = fog;
+    }
+
+    public Integer getHail() {
+        return hail;
+    }
+
+    public void setHail(Integer hail) {
+        this.hail = hail;
+    }
+
+    public Double getHeatindexm() {
+        return heatindexm;
+    }
+
+    public void setHeatindexm(Double heatindexm) {
+        this.heatindexm = heatindexm;
+    }
+
+    public Double getHum() {
+        return hum;
+    }
+
+    public void setHum(Double hum) {
+        this.hum = hum;
+    }
+
+    public Double getPrecipm() {
+        return precipm;
+    }
+
+    public void setPrecipm(Double precipm) {
+        this.precipm = precipm;
+    }
+
+    public Double getPressurem() {
+        return pressurem;
+    }
+
+    public void setPressurem(Double pressurem) {
+        this.pressurem = pressurem;
+    }
+
+    public Integer getRain() {
+        return rain;
+    }
+
+    public void setRain(Integer rain) {
+        this.rain = rain;
+    }
+
+    public Integer getSnow() {
+        return snow;
+    }
+
+    public void setSnow(Integer snow) {
+        this.snow = snow;
+    }
+
+    public Double getTempm() {
+        return tempm;
+    }
+
+    public void setTempm(Double tempm) {
+        this.tempm = tempm;
+    }
+
+    public Integer getThunder() {
+        return thunder;
+    }
+
+    public void setThunder(Integer thunder) {
+        this.thunder = thunder;
+    }
+
+    public Integer getTornado() {
+        return tornado;
+    }
+
+    public void setTornado(Integer tornado) {
+        this.tornado = tornado;
+    }
+
+    public Double getVism() {
+        return vism;
+    }
+
+    public void setVism(Double vism) {
+        this.vism = vism;
+    }
+
+    public Integer getWdird() {
+        return wdird;
+    }
+
+    public void setWdird(Integer wdird) {
+        this.wdird = wdird;
+    }
+
+    public String getWdire() {
+        return wdire;
+    }
+
+    public void setWdire(String wdire) {
+        this.wdire = wdire;
+    }
+
+    public Double getWgustm() {
+        return wgustm;
+    }
+
+    public void setWgustm(Double wgustm) {
+        this.wgustm = wgustm;
+    }
+
+    public Double getWindchillm() {
+        return windchillm;
+    }
+
+    public void setWindchillm(Double windchillm) {
+        this.windchillm = windchillm;
+    }
+
+    public Double getWspdm() {
+        return wspdm;
+    }
+
+    public void setWspdm(Double wspdm) {
+        this.wspdm = wspdm;
+    }
 }
