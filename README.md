@@ -1,23 +1,5 @@
-# Weather API
 
-Simple Spring Boot application for managing weather data.
-
-## Features
-- Import weather data from CSV on startup.
-- Find weather records by date, range, or condition.
-- Sort data by temperature.
-- Filter by temperature, humidity, and pressure thresholds.
-
-## Setup
-1. Ensure MongoDB is running on `localhost:27017`.
-2. Run the application:
-   ```bash
-   ./gradlew bootRun
-   ```
-
-## API Endpoints
-- `GET /weather/all`: Get all records.
-- `GET /weather/date?date=YYYY-MM-DD`: Search by date.
-- `GET /weather/range?start=YYYY-MM-DD&end=YYYY-MM-DD`: Search between dates.
-- `GET /weather/condition?condition=Sunny`: Filter by condition.
-- `GET /weather/sorted`: Sort by temperature descending.
+<img width="1811" height="865" alt="image" src="https://github.com/user-attachments/assets/cc547eeb-dd29-4226-aa16-4995ae173efc" />
+<img width="1590" height="971" alt="image" src="https://github.com/user-attachments/assets/8562ddc2-a9db-4863-8378-d2ef5c6b70fb" />
+<img width="1595" height="985" alt="image" src="https://github.com/user-attachments/assets/6693155c-c677-4380-9170-5ed4cdf288e0" />
+<img width="1566" height="957" alt="image" src="https://github.com/user-attachments/assets/c1e367bb-ee9d-44c4-924a-557e37318a08" />
