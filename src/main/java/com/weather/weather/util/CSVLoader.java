@@ -34,7 +34,7 @@ public class CSVLoader implements CommandLineRunner {
         String line;
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyyMMdd-HH:mm");
 
-        // Skip header row
+        
         br.readLine();
 
         while ((line = br.readLine()) != null) {
@@ -68,7 +68,7 @@ public class CSVLoader implements CommandLineRunner {
                 repository.save(w);
 
             } catch (Exception e) {
-                // Skip invalid rows
+                
             }
         }
     }
